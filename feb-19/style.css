@@ -1,0 +1,134 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 1300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.body{
+    width: 1300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.boton{
+    padding: 10px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px; 
+    width: 150px; 
+    text-align: center; 
+    margin : 10px;
+    text-decoration: none;
+}
+
+.menu{
+    
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.cajas{
+    width: 1300px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #800000;
+    border-radius: 10px; 
+    
+}
+.titulo {
+    bottom: right;
+    display: flex; 
+    align-items: center; 
+}
+
+.engrane {
+    width: 50px; 
+    height: auto; 
+}
+.materias {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+p span.resaltar-dorado{
+    color: #cc9900; 
+    font-weight: bold;
+}
+p span.resaltar-negro{
+    color: #000000; 
+    font-weight: bold;
+}
+p span.resaltar-rojo{
+    color: #800000; 
+    font-weight: bold;
+}
+
+#color_dorado{
+    margin-left: 20px;
+    color: #cc9900;
+    
+}
+.rectangulo-amarillo {
+    width: 200px; 
+    height: 10px; 
+    background-color: #cc9900; 
+}
+.rectangulo-rojo {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50px; 
+    height: 10px; 
+    background-color: #800000; 
+}
+.titulo-section{
+    margin: 0;
+}
+.bienvenida{
+    width: 1300px;
+    background-color:  #F2F2F2;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.fotos{
+    width: 300px; 
+    height: auto;
+    border-radius: 25px; 
+}
+.footer{
+    width: 1300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #800000;
+    color: #fff;
+    border-radius: 10px; 
+    
+   
+}
+.contacto{
+    
+    color: #fff;
+
+}
+#logo_tec{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+    display: block;
+}
+
+.imagen{
+    width: 1300px;
+}
