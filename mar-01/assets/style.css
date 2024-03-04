@@ -1,0 +1,147 @@
+/* Path: mar-01/assets/style.css */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ancho{
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+
+/* header */
+
+.header{
+    background-color: #233e81;
+    color: #fff;
+    text-align: center;
+    font-size: x-small;
+    padding: 1px;
+}
+
+/* nav */
+.nav{
+    color: #fff;
+    text-align: center;
+    font-size: x-small;
+    padding: 1px;
+}
+
+.nav img{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+    display: block;
+}
+.nav a{
+    color: #000;
+    font-size: medium;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+/* promociones */
+
+.promociones{
+    background-color: #868686;
+    color: #233e81;
+    text-align: center;
+    font-size: x-small;
+    padding: 1px;
+    height: 350px;
+}
+.promociones h2{
+    font-size: xx-large;
+}
+
+.promociones marquee{
+    height: 200px;
+}
+.promociones img {
+    max-width: fit-content;
+    max-height: fit-content;
+    object-fit: contain;
+}
+/* precios */
+
+.tabla{
+    /* border: 1px solid #233e81; */
+    text-align: center;
+    margin: auto;
+    /* border-spacing: 15px; */
+    width: 900px;
+
+}
+.tabla th{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: large;
+    width: 800px;
+}
+.tabla td{
+    padding : 10px
+}
+.tabla img{
+    max-height: 40px;
+    margin: 0 auto;
+}
+.plan{
+    color:orange
+}
+.cabeza{
+    font-size: x-large;
+    color:#233e81
+}
+
+.mint-sms{
+    background-color: #d6caca;
+    color: #000;
+    font-size: large;
+}
+.mint-sms a{
+    color:#233e81
+}
+.red-5g{
+    background-color: #233e81;
+    color:  #fff;
+    padding: 10px;
+    font-size: large;
+}
+
+/* Video */
+.video{
+    color: #233e81;
+    padding: 10px;
+}
+.video h2{
+    font-size: xx-large;
+}
+
+/* banner */
+.banner{
+    background-image: url(../imagenes/banner_publicidad.jpg);
+    padding: 1px;
+    height: 222px;
+}
+.publicidad{
+    color:#fff;
+    margin-left: 500px;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+/* footer */
+.footer{
+    background-color: #d6caca;
+    text-align: center;
+    font-size: x-small;
+    padding: 50px;
+}
+.footer img{
+    width: 100px;
+    margin:  auto;
+    display: block;
+}
