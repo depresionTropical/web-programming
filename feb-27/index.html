@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <h1>ELEMENTOS FORMULARIO</h1>
+
+    <form acction="" method="" enctype="" class="contact-form">
+      <label for="name">Nombre</label>
+      <input class="name" type="text" name="name" id="name" />
+      <br /><br />
+      <input
+        class="login-element"
+        type="text"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <br /><br />
+
+      <input
+        class="login-element"
+        type="password"
+        name="password"
+        maxlength="4"
+        placeholder="Password"
+      />
+      <br /><br />
+      <input type="checkbox" name="course" id="course1" value="web" />
+      <label for="course1" class="course">Web</label>
+      <br />
+      <input type="checkbox" name="course" id="course2" value="backend" />
+      <label for="course2" class="course">backend</label>
+      <br><br>
+        <input type="email" name="email" id="emial">
+      <br><br>
+        <input type="radio" name="turno" id="course3" value="vespertino">
+        <label for="course3" class="course">Vespertino</label>
+      <br>
+      <input type="radio" name="turno" id="course4">
+      <label for="course4" class="course">Matutino</label>
+      <br><br>
+      <button class="button" type="submit">Enviar Datos</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.ancho{
+    width: 1300px;
+    margin: auto;
+}
+
+.video-container{
+    border: 3px red solid;
+    width: 50%;
+}
+
+.video-1{
+    border: 2px solid green;
+    width: 600px;
+    border-radius: 1px;
+}
+
+.audio-container{
+    border: 3px red solid;
+    width: 50%;
+}
+.audio-1{
+    border: 2px solid green;
+    width: 600px;
+    border-radius: 1px;
+}
