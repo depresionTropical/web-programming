@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <script type="text/javascript">
+    function validar() {
+      var nombre = document.getElementById('nombre').value.trim(); // Obtener el valor del campo Nombre y eliminar espacios en blanco
+      var apellido1 = document.getElementById('apellido1').value.trim(); // Obtener el valor del campo Primer Apellido y eliminar espacios en blanco
+      var email = document.getElementById('email').value.trim(); // Obtener el valor del campo Correo Electrónico y eliminar espacios en blanco
+      var asunto = document.getElementById('asunto').value.trim(); // Obtener el valor del campo Asunto y eliminar espacios en blanco
+      var fechaNacimiento = new Date(document.getElementById('fecha_nacimiento').value); // Obtener la fecha de nacimiento ingresada
+  
+      // Verificar si alguno de los campos obligatorios está vacío
+      if (nombre.length === 0 || apellido1.length === 0 || email.length === 0 || asunto.length === 0) {
+        alert("Por favor, completa todos los campos obligatorios.");
+        return false; // Evitar que el formulario se envíe si algún campo obligatorio está vacío
+      }
+  
+      // Verificar si la fecha de nacimiento es mayor que la fecha actual
+      var fechaActual = new Date();
+      if (fechaNacimiento >= fechaActual) {
+        alert("La fecha de nacimiento debe ser menor que la fecha actual.");
+        return false; // Evitar que el formulario se envíe si la fecha de nacimiento es mayor o igual que la fecha actual
+      }
+  
+      // Si deseas realizar más validaciones, puedes agregarlas aquí
+  
+      return true; // Si todas las validaciones pasan, permite el envío del formulario
+    }
+  </script>
+  
+  
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="image/logo.png" alt="Logo">
+  </div>
+
+  <!-- Formulario -->
+
+  <div class="head">
+    <h1>Datos Genereales del Alumno</h1>
+    <!-- lineaaaaa -->
+  </div>
+  <div class="form">
+    <p class="instruction">*Campos obligatorios</p>
+    <form class="formulario" name="formulario" >
+      <div class="campo">
+        <label for="curp">CURP:</label>
+        <input class="element" type="text" id="curp" name="curp" placeholder="CURP">
+      </div>
+      <div class="campo">
+        <button type="button" class="consultar">Consultar CURP</button>
+      </div>
+      <div class="campo"></div>
+      <div class="campo">
+        <label for="nombre">* Nombre:</label>
+        <input class="element" type="text" id="nombre" name="nombre" placeholder="Nombre">
+      </div>
+      <div class="campo">
+        <label for="apellido1">* Primer Apellido:</label>
+        <input class="element" type="text" id="apellido1" name="apellido1" placeholder="Primer apellido">
+      </div>
+      <div class="campo">
+        <label for="apellido2">* Segundo Apellido:</label>
+        <input class="element" type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+      </div>
+      <div class="campo">
+        <label for="email">* Correo Electrónico:</label>
+        <input class="element" type="email" id="email" name="email" placeholder="correo">
+      </div>
+      <div class="campo">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" class="element">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input class="element" type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+      </div>
+      <div class="campo">
+        <label for="telefono">Teléfono Fijo:</label>
+        <input class="element" type="tel" id="telefono" name="telefono" placeholder="Telefono Fijo">
+      </div>
+      <div class="campo">
+        <label for="celular">Celular:</label>
+        <input class="element" type="tel" id="celular" name="celular" placeholder="Celular">
+      </div>
+      <div class="textarea">
+        <label for="asunto">* Asunto:</label>
+        <textarea id="asunto" name="asunto" rows="3"></textarea>
+      </div>
+      <div class="campo">
+        <button type="button" class="enviar" onclick="validar()">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>Nombre del Alumno: </p>
+    <p>Grupo</p>
+    <p>Materia</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  text-align: center;
+  background-color: #999;
+  width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container img {
+  margin: 0 auto;
+  display: block;
+  height: 90;
+}
+
+.head{
+  font-size: medium;
+  font-weight: bold;
+  margin: 20px;
+  width: 1300px;
+  margin: auto;
+}
+
+/* form */
+
+.form{
+  width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+.instruction{
+  color: #631233;
+  font-size: medium;
+}
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.campo {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+}
+
+label {
+  text-align: left;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.boton {
+  text-align: center;
+}
+
+.textarea{
+  grid-column: span 3;
+}
+.element{
+  
+  border: 1px #999 solid;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+textarea{
+  border: 1px #999 solid;
+  margin-bottom: 15px;
+  height: 150px;
+  resize: none;
+
+}
+.consultar{
+  color: white;
+  background-color: #631233;
+  width: 33%;
+  padding: 15px;
+  border: 1px solid;
+}
+.enviar{
+  color: white;
+  background-color: #631233;
+  width: 33%;
+  padding: 15px;
+  border: 1px solid;
+}
+
+.footer{
+  background-color: #631233;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  font-size: medium;
+  font-weight: bold;
+}

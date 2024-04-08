@@ -136,28 +136,28 @@ body {
 /* banner */
 .banner {
     background: linear-gradient(to right, #0077b1, #00c5fa);
-            background-image: url(../imagenes/banner_publicidad.jpg);
-            padding: 1px;
-            height: 222px;
-    }
+    background-image: url(../imagenes/banner_publicidad.jpg);
+    padding: 1px;
+    height: 222px;
+}
 
-    .publicidad {
-        color:#fff;
-        margin-left: 500px;
-        margin-top: 50px;
-        font-size: xx-large;
-    }
+.publicidad {
+    color: #fff;
+    margin-left: 500px;
+    margin-top: 50px;
+    font-size: xx-large;
+}
 
-    /* footer */
-    .footer {
-        background-color: #d6caca;
-        text-align: center;
-        font-size: x-small;
-        padding: 50px;
-    }
+/* footer */
+.footer {
+    background-color: #d6caca;
+    text-align: center;
+    font-size: x-small;
+    padding: 50px;
+}
 
-    .footer img {
-        width: 100px;
-        margin: auto;
-        display: block;
-    }
+.footer img {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
