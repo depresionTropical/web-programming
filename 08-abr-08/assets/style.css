@@ -39,15 +39,24 @@
   font-size: 20px;
 }
 .forms form input{
+  padding: 5px;
   margin: 10px 0;
   border-radius: 10px;
   border: 1px solid #999;
 }
-.fors option{
-  width: 35%;
+.forms form select{
+  padding: 2px 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.forms form button{
+  padding: 5px 25px;
   margin: 10px 0;
   border-radius: 10px;
   border: 1px solid #999;
+  background-color: #cc9900;
+  color: #fff;
+  font-size: 20px;
 }
 /* menu */
 .menu{
@@ -131,12 +140,12 @@
   display: inline-block;
 }
 .imag-2 {
-  width: 2%; 
+  width: 49%;
   display: inline-block; 
 
 }
 .imag-1{
-  width: 2px; 
+  width: 100%;
   display: inline-block; 
 }
 
@@ -163,11 +172,13 @@
   
   padding: 20px;
   margin: auto;
-
+  text-decoration: none;
+  border-radius: 10px;
 
 }
 .card2 h2{
   color: #cc9900;
+
 }
 .card2 p{
   padding: 20px;
@@ -180,6 +191,8 @@
   border-radius: 10px;
   text-decoration: none;
   margin: auto;
+  color: #fff;
+  
 }
 
 /* footer */
