@@ -15,7 +15,96 @@ body{
   margin: auto;
 
 }
+/* header */
+.header{
+  padding: 10px 20px;
+}
 
+.header a{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 10px;
+}
+.header span{
+  margin-left: 700px;
+}
+
+/* nav */
+
+.nav{
+ height: 60px;
+ display: flex;
+  flex-direction: row;
+
+}
+.img{
+  display: inline-block;
+  margin-left: 23px;
+  color:#0ac9fc;
+  font-size: 40px;
+  padding-top:25px;
+
+}
+.section{
+  display: inline-block;
+  margin-left: 60px;
+  padding-top:25px;
+  
+}
+
+.section a{
+  text-decoration: none;
+  padding: 10px 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.section a:hover{
+  background-color: #0ac9fc;
+  color:#f1f1f1;
+}
+
+
+/* slider */
+
+.slider{
+  height: 500px;
+  background-image: url(img/foto1.jpg);
+  background-size: cover; 
+  background-position: center; 
+}
+.element{
+  width: 80%;
+  margin:auto;
+  height: 90%;
+}
+.element h2{
+  color:#06d6a6;
+  font-size: 50px;
+  margin: 0 auto;
+  width: 65%;
+  text-align: center;
+  padding-top:40px ;
+  line-height: 1.5;
+}
+.element p{
+  color:white;
+  padding-top: 40px;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.bottons-content{
+  padding-top: 40px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+/* card  */
 .box-container{
   display: flex;
   flex-direction: row;
@@ -48,7 +137,7 @@ body{
   width: 300px;
   margin: auto;
 }
-.box a{
+.botton-white{
   padding: 15px 35px;
   background-color: white;
   display: inline-block;
@@ -56,7 +145,7 @@ body{
   border-radius: 40px;
 
 }
-.box a:hover{
+.botton-whit:hover{
   background-color: #f1f1f1;
 }
 .box-blue1{
@@ -82,7 +171,7 @@ body{
   display: inline-block;
   vertical-align: top;
 }
-.about-content a{
+.botton-blue{
   padding: 15px 35px;
   background-color: #0ac9fc;
   color:white;
@@ -108,4 +197,17 @@ body{
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+/* footer */
+.footer{
+  background-color: #0ac9fc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer p{
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.5;
 }
