@@ -1,0 +1,94 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+
+}
+.first-bgcolor { 
+	background: #e4f1fe; 
+}
+	
+.second-bgcolor { 
+	background: #8dc6ff; 
+}
+
+.third-bgcolor { 
+	background: #22313f; 
+}
+
+.fourth-bgcolor { 
+	background: #34495e; 
+}
+.first-color { 
+	color: #e4f1fe; 
+}
+	
+.second-color { 
+	color: #8dc6ff; 
+}
+
+.third-color { 
+	color: #22313f; 
+}
+
+.fourth-color { 
+	color: #34495e; 
+}
+/* header */
+
+
+.header-container{
+  padding:25px ;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+.header-container h1{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 25px;
+}
+.header-container p{
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 25px;
+}
+.header-container details{
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 25px;
+  margin-left:5px ;
+}
+
+/* form */
+.container-form{
+  padding: 25px;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  border: 1px solid red;
+}
+.form-group{
+  width: 45%;
+  border: 1px solid red;
+}
+.form-group input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
