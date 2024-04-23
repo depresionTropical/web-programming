@@ -135,7 +135,7 @@ body {
 
 .services{
   background-color: #e2eaf3;
-  height: 550px;
+  height: 600px;
 }
 
 .title{
@@ -226,7 +226,7 @@ body {
   border: 5px solid #2db7f4;
   border-radius: 25px;
   width:30% ;
-  height: 400px;
+  height: 450px;
   margin: 0 15px;
   display: inline-block;
   vertical-align: middle;
@@ -235,14 +235,26 @@ body {
 .table-pricing{
   width: 100%;
   border-spacing:15px;
-  border: 1px solid #2db7f4;
 }
+
 .span-th{
   font-size: 20px;
   font-weight: bold;
   background-color: #e2eaf3;
   padding: 10px 100px;
   text-align: center;
+  border-radius: 45px;
+}
+
+.span-orange{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4e00;
+  padding: 10px 100px;
+  text-align: center;
+}
+.span-gray{
+  color: #e2eaf3;
 }
 
 /* Contact-get */

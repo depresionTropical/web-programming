@@ -6,6 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketon</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script>
+    function sent(){
+      
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      if (name.length === 0 || email.length === 0 || message.length === 0) {
+        alert("Please, complete all the required fields.");
+        return false;
+      }
+
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) {
+        alert("The email entered is not valid.");
+        return false;
+      }
+
+      alert("Form sent successfully.");
+    }
+  </script>
 </head>
 
 <body>
@@ -63,7 +84,10 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/AavsQP3gPj4?si=ceDxCGdyaRg7-ehd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <div class="services-card">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad aperiam quibusdam nisi labore eveniet ipsam aliquam cum porro nemo libero vel id quam, reprehenderit et blanditiis perferendis praesentium? Officia, incidunt!</p>
+      <p>Are you looking for ways to increase website traffict, but having a hard time turing visitis into sales? 
+        </p>
+        <p>
+        Our SEO services were developed with YOU in mind. Actually, they were developed with your custumers in mind! By cooperating with us, our clients can concentrate on running their businesses insted of SEO</p>
 
       <a href="#" class="botton-orange">details</a>
     </div>
@@ -82,7 +106,7 @@
         </div>
           <h3>On-Page SEO</h3>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eos et placeat ex</p>
+          <p>Our team of experts carries out SEO.audits that indentify tecnical issues of client's website</p>
         
       </div>
       <div class="card-choose">
@@ -91,7 +115,7 @@
         </div>
           <h3>Google Ranking</h3>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eos et placeat ex</p>
+          <p>With our expertise, 70% of all our clients' targeted keywords got secured in the top 10 in just 6 moths</p>
         
       </div>
       <div class="card-choose">
@@ -100,7 +124,7 @@
         </div>
           <h3>Traffict & Analytics</h3>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eos et placeat ex</p>
+          <p>Our main focus ins not just ranking, but also the overall search traffic acorss a broad range of keywords.</p>
         
       </div>
     </div>
@@ -114,12 +138,47 @@
           <tr><th><span class="span-th">basic</span></th></tr>
           <tr><td><span class="span-orange">FREE</span></td></tr>
           <tr><td><span class="span-gray">per moth</span></td></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
+          <tr><td>low-end SEO</td></tr>
+          <tr><td>basic website audit</td></tr>
+          <tr><td>fix recommendations</td></tr>
+          <tr><td>up to 10 crawled pages</td></tr>
+          <tr><td>50 keyswords</td></tr>
+          <tr><td>
+            <br>
+            <br>
+            <a href="#" class="botton-orange">BUY NOW</a</td></tr>
+        </table>
+      </div>
+      <div class="card-pricing">
+        <table class="table-pricing">
+          <tr><th><span class="span-th">advacnes</span></th></tr>
+          <tr><td><span class="span-orange">$69</span></td></tr>
+          <tr><td><span class="span-gray">per moth</span></td></tr>
+          <tr><td>mid-end SEO</td></tr>
+          <tr><td>standard website audit</td></tr>
+          <tr><td>errors fixes</td></tr>
+          <tr><td>100 - 500 crawled pages</td></tr>
+          <tr><td>50 -100 keyswords</td></tr>
+          <tr><td>
+            <br>
+            <br>
+            <a href="#" class="botton-orange">BUY NOW</a</td></tr>
+        </table>
+      </div>
+      <div class="card-pricing">
+        <table class="table-pricing">
+          <tr><th><span class="span-th">premium</span></th></tr>
+          <tr><td><span class="span-orange">FREE</span></td></tr>
+          <tr><td><span class="span-gray">$99</span></td></tr>
+          <tr><td>high-end SEO</td></tr>
+          <tr><td>advanced website audit</td></tr>
+          <tr><td>advanced error fixes</td></tr>
+          <tr><td>more than 500 crawled pages</td></tr>
+          <tr><td>150 + keyswords</td></tr>
+          <tr><td>
+            <br>
+            <br>
+            <a href="#" class="botton-orange">BUY NOW</a</td></tr>
         </table>
       </div>
     </div>
@@ -169,12 +228,15 @@
       </div>
 
       <div class="contact-form">
-        <form action="">
-          <input class="contact-form-input" type="text" placeholder="Name">
-          <input class="contact-form-input" type="email" placeholder="Email">
-          <textarea class="contact-form-input"name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-          <input type="button" class="botton-orange contact-card-botton" onclick="sent()" value="SEND">
+        <form action="" method="post">
+          <input class="contact-form-input" type="text" name="name"
+          id="name" placeholder="Name*">
+          <input class="contact-form-input" type="email" id="email" name="email" placeholder="Email*">
+          <textarea class="contact-form-input"name="message" id="message" cols="30" rows="10" placeholder="Message*"></textarea>
+          
+          <input class="botton-orange contact-card-botton" type="button" onclick="sent()" value="Enviar">
         </form>
+      </div>
     </div>
   </div>
   </div>
@@ -187,7 +249,7 @@
         <div class="img-footer">
           <img src="assets/img/logo_abajo.png" alt="logo">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium voluptas, at adipisci eveniet quasi dolorem quis assumenda veniam excepturi doloremque, rem temporibus omnis non minima voluptates ex deleniti. Quo?</p>
+        <p>We offer tailored services that leaverage search engines to boost sales, bring new customers and optimaze or clients' adverstising budgets</p>
       </div>
       <hr class="footer-white">
 
