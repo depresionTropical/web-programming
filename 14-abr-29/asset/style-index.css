@@ -1,0 +1,123 @@
+.img-slide{
+  background: url(./img/foto_slide.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+}
+
+.text-slide{
+  color: white;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  padding-top: 150px;
+  
+}
+
+.text-slide h1{
+  padding: 30px 0;
+  margin: 50px;
+  font-size: 90px;
+}
+.text-slide p{
+  padding: 20px 0;
+  margin: 50px;
+  font-size: 30px;
+}
+.text-slide a{
+  padding: 20px 30px;
+  margin: 50px;
+  background-color: #097578;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.text-slide a:hover{
+  background-color: #D5EFF0;
+  color: #097578;
+}
+.title{
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 5px;
+
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.title h2{
+  padding: 20px 0;
+  margin: auto;
+  font-size: 50px;
+  width: 45%;
+  line-height: 1;
+
+}
+.title p{
+  padding: 20px 0;
+  margin: auto;
+  font-size: 20px;
+  width: 45%;
+  line-height: 1;
+}
+
+.plans{
+  height: 1200px;
+}
+.plan-card{
+  display: inline-block;
+  width: 30%;
+  height: 700px;
+  margin: 17px;
+  vertical-align: middle;
+}
+
+.img-card-1{
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+
+}
+.img-card-2{
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+
+}
+.img-card-3{
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+
+}
+.img-card-1 img{
+  width: 100%;
+  height: 100%;
+}
+.img-card-2 img{
+  width: 100%;
+  height: 100%;
+}
+.img-card-3 img{
+  width: 100%;
+  height: 100%;
+}
+.title-2{
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.title-2 h2{
+  margin-top:20px;
+  font-size: 25px;
+  line-height: 1;
+
+}
+.title-2 p{
+  margin: 20px 2px;
+  font-size: 20px;
+  line-height: 1;
+}

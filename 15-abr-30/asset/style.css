@@ -1,0 +1,55 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.basic h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 20px 0;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.awser{
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+/* ================================= */
+/* formulario 2 */
+
+.form-carreras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border: 1px solid red;
+}
+.form-carreras-ele {
+  margin: 10px;
+  padding: 15px 20px;
+  display: inline-block;
+  width: 90%;
+  font-size: 30px;
+}

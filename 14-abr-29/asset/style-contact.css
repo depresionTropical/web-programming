@@ -1,0 +1,72 @@
+
+.container{
+  height: 700px;
+}.request{
+    height: 300px;
+    background-color: #097578;
+}
+.request h2{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 150px;
+    padding-top: 120px;
+}
+.form-text{
+    text-align: center;
+    margin: auto;
+    height: 600px;
+}
+.form-text h2{
+    color:#097578;
+    padding: 20px 0;
+    margin: auto;
+    font-size: 50px;
+    margin: 50px 100px;
+    line-height: 1;
+}
+
+.forms{
+  background-color: #097578;
+  height: 300px;
+  margin: 50px 0;
+
+}
+.forms input{
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  font-size: 20px;
+  background-color: #216966;
+  border: none;
+  color: white;
+}
+.form-card{
+  display: inline-block;
+  margin: 50px 0;
+  vertical-align: middle;
+
+  width: 40%;
+}
+.form-card input{
+  width: 90%;
+  height: 50px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #216966;
+  border: none;
+  color: white;
+}
+.form-card select{
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #216966;
+  border: none;
+  color: white;
+}
