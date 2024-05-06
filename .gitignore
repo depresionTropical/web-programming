@@ -6,3 +6,5 @@
 elementos/
 
 .env
+
+*.sql
