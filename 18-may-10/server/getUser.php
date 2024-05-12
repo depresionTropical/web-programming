@@ -16,5 +16,6 @@ while( $row = mysqli_fetch_assoc($result) ) {
     $typeUser = "Usuario";
   }
   echo "<td>".$typeUser."</td>";
-  echo "<td><a href='#'>Eliminar</a></td>";
+  echo "<td><a class='btn-blue' href='../server/deleteUser.php?id=".$row['id']."'>eliminar</a></td>";
+  // echo '<td><a href="../server/deleteUser.php">eliminar</a></td>';
 }
