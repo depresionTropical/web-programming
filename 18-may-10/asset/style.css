@@ -1,0 +1,72 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #ECECEC;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  background-color: #33476F;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 30px;
+  margin: auto;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* login */
+
+.login {
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container{
+  margin-top: 20px;
+}
+
+.input-login {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-ginda{
+  background-color: #701E46;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-ginda:hover{
+  background-color: white;
+  border: 1px solid #701E46;
+  color:black;
+  font-weight: bold;
+}

@@ -1,0 +1,115 @@
+.title-user{
+  height: 90px;
+}
+.title-user p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.title-user hr{
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #701E46;
+}
+.btn-user{
+  margin:0 10px;
+}
+/* btn back */
+
+.btn-gray{
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-gray:hover{
+  background-color: white;
+  border: 1px solid #333333;
+  color:black;
+  font-weight: bold;
+}
+
+.btn-ginda{
+  background-color: #701E46;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-ginda:hover{
+  background-color: white;
+  border: 1px solid #701E46;
+  color:black;
+  font-weight: bold;
+}
+
+
+/* form */
+
+.form{
+  width: 100%;
+  padding: 20px;
+  margin: 60px 0;
+  
+
+}
+.input-user{
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 15px;
+  border: 1px solid;
+  font-size: 15px;
+}
+
+/* table */
+
+.table-user{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid red;
+  
+ 
+}
+.table-user table{
+  border-spacing: 10px;
+
+}
+.table-user th{
+  background-color: #701E46;
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  padding: 10px;
+  
+}
+.table-user tr{ 
+  width: 100%;
+  margin: 20px 0;
+}
+
+.table-user td {
+  padding: 10px;
+  border: 1px solid red;
+  text-align: center;
+  border-spacing: 4px;
+  
+}
+.table-user a{
+  text-decoration: none;
+  color: #701E46;
+  font-weight: bold;
+}
+.table-user a:hover{
+  color: black;
+  font-weight: bold;
+  font-size : 15px;
+}
