@@ -9,7 +9,6 @@
 <body>
   <div class="basic welcome ">
   <h1>¡Bienvenido!</h1>
-  
   <form action="verify.php" method="post">
     <label for="user">Usuario:</label>
     <input type="text" name="user" id="user">
@@ -19,7 +18,6 @@
     <br>
     <button type="submit">Iniciar sesión</button>
   </form>
-
   </div>
 </body>
 </html>
