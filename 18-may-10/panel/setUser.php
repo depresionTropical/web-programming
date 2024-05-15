@@ -33,7 +33,7 @@
     <?php include '../components/panel.php'; ?>
     <div class="content">
       <?php
-      $titleUser = 'AlTA USUARIOS';
+      $titleUser = 'ALTA USUARIOS';
       include '../components/title.php';
       ?>
       <div class="form">

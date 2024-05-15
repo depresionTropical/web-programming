@@ -115,3 +115,28 @@
   font-weight: bold;
   font-size : 15px;
 }
+
+
+/* Form Course */
+.days-course{
+  background-color: #999;
+  margin: 15px 0;
+  font-size: 15px;
+  vertical-align: top;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: large;
+}
+.days-container{
+  margin: 15px 0;
+  font-size: 15px;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+}
+.days *{
+  display: block;
+  margin:auto;
+
+}
+

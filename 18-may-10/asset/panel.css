@@ -9,7 +9,6 @@
 .content {
   display: inline-block; 
   width: 60%;
-  height: 100%;
   padding: 20px; 
   background-color: white;
 }
@@ -31,7 +30,6 @@
 .panel {
   display: inline-block; 
   width: 30%;
-  height: 200px;
   margin-right: 20px;
   vertical-align: top; 
   background-color: #33476F;
@@ -57,6 +55,7 @@
   padding: 10px;
   color: white;
   margin-top:30px;
+  margin-bottom: 30px;
   margin-left: 30%;
   text-align: center;
   text-decoration: none;
