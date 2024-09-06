@@ -1,0 +1,63 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: gray;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+/* paragraphs */
+p{
+  margin: 20px 0;
+}
+.space
+{
+  margin: 50px 0;
+}
+.sheet{
+  background-color: white;
+  
+  padding: 20px 60px;
+  height: 1200px;
+}
+.paragraph {
+  text-align: left;
+  margin: 50px 90px;
+  font-size: 25px;
+}
+
+.tag{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  background-color: aqua;
+}
+.blue-letters{
+  color: blue;
+  font-weight: bold;
+}
+.orange-letters{
+  color: orange;
+  font-weight: bold;
+}
+.green-letters{
+  color: green;
+  font-weight: bold;
+}
+.subtittle{
+
+  font-size: 30px;
+  font-weight: bold;
+}
