@@ -1,0 +1,40 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid red;
+}
+
+
+/* logos */
+.util{
+  padding: 15px;
+}
+.logo-container{
+  border: 1px solid red;
+}
+.logo-container img{
+  height: 100px;
+}
+
+.menu-container{
+  background-color: #1b396a;
+}
+.links{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
