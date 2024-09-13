@@ -15,7 +15,6 @@ body {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  border: 1px solid red;
 }
 
 
@@ -24,10 +23,11 @@ body {
   padding: 15px;
 }
 .logo-container{
-  border: 1px solid red;
+
 }
 .logo-container img{
   height: 100px;
+  
 }
 
 .menu-container{
@@ -37,4 +37,58 @@ body {
   color: white;
   text-decoration: none;
   padding: 10px;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 8px;
+
+}
+
+.slide-photo img{
+  width: 100%;
+  
+}
+
+.red-text{
+  color:#800000;
+}
+.blue-text{
+  color: #1b396a;
+}
+.gold-text{
+  color: #ffd700;
+}
+
+.welcome-container p {
+  margin: 20px;
+  text-align: left;
+}
+
+.final-container{
+  background-color: #295c52;
+  text-align: left;
+  padding: 30px;
+}
+
+.final-container img
+{
+  height: 100px;
+}
+
+.btn-info{
+  background-color: #800000;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 45px;
+  margin: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.title{
+  background-color: #cecece;
+  margin: 10px 0;
+  padding: 20px;  
+  font-size: 50px;
+  text-transform: uppercase;
 }
