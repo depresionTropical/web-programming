@@ -16,3 +16,156 @@ body {
   margin: auto;
   text-align: center;
 }
+
+/* nav-container */
+.nav-container {
+  background-color: #F2F2F2;
+  
+}
+
+.nav-container hr{
+  background-color: #cc9900;
+  height: 12px;
+  border: 0px;
+}
+
+/* logo container */
+
+.logo-container {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.menu-container {
+  margin-top: 20px;
+}
+
+.menu-btn{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #800000;
+  padding: 10px 30px;
+  border-radius: 40px;
+  margin: 8px;
+}
+.banner-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.banner-container img {
+  width: 100%;
+
+}
+
+/* welcome-container */
+
+
+.card {
+  display: inline-block;
+
+  width: 90%;
+  margin: 20px;
+  padding: 50px;
+}
+.card *{
+  margin: 20px;
+}
+
+.welcome{
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.welcome hr{
+  background-color: #cc9900;
+  height: 12px;
+  border: 0px;
+  width: 12%;
+}
+
+.options{
+  display: inline-block;
+  border: #800000 1px solid;  
+  border-radius: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+.red-line{
+  background-color: #800000;
+  height: 12px;
+  border: 0px;
+  width: 12%;
+}
+
+.img-container-1{
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 45px;
+  background-image: url(img/objetivo.jpeg);
+  background-size: cover;
+  background-position: center;
+
+}
+.img-container-2{
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 45px;
+  background-image: url(img/campo_trabajo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bold-letter{
+  font-weight: bold;
+  margin: 0;
+}
+.yellow-letter{
+  color: #cc9900;
+}
+.red-letter{
+  color: #800000;
+}
+
+.materia-block{
+  text-align: left;
+  width: 90%;
+
+  align-content: start;
+  
+}
+.engine{
+  display: inline-block;
+  width: 20px;
+}
+.engine img{
+  width: 100%;
+}
+
+
+.block{
+  display: inline-block;
+  width: 70%;
+  margin: 20px;
+  padding: 50px;
+  
+}
+
+.footer{
+  background-color: #800000;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 25px;
+}
