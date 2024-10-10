@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="basic">
+    <div class="title-container">
+      <h1>Te <span class="green-letter">OFRECEMOS</span> una amplia variedad de <span class="green-letter">SEGUROS DE DIFERENTES MARCAS:</span></h1>
+    </div>
+    <div class="logo-container">
+      <img src="img/segurosmonterrey.jpg" alt="seguros monterrey">
+      <img src="img/logometlife.jpg" alt="metlife">
+      <img src="img/logoqualitas.jpg" alt="qualitas">
+    </div>
+    <div class="logo-container">
+      <img src="img/segurosmultiva.jpg" alt="multiva">
+      <img src="img/allianz.jpg" alt="allianz">
+      <img src="img/aig.jpg" alt="aig">
+    </div>
+    <div class="card">
+      <h2 class="subtitle">¿Estás interesado en algún tipo de seguro?</h2>
+      <p class="letter">Déjanos tus datos y contactaremos contigo: (campos obligatorios *)</p>
+
+      <form action="" method="post">
+        <div class="form-group">
+          <input class="input-class" type="text" name="name" id="name" required placeholder="Nombre *">
+          <input class="input-class" type="text" name="lasname" id="lasname" required placeholder="Apellido *">
+          <input class="input-class" type="tel" name="phone" id="phone" required placeholder="Teléfono *">
+          <select class="input-class" name="insurance" id="insurance" required>
+            <option class="option" value="" disabled selected>Escoge tu seguro</option>
+            <option class="option" value="seguros-monterry">Seguros monterrey</option>
+            <option class="option" value="metlife">Metlife</option>
+            <option class="option" value="qualitas">Qualitas</option>
+            <option class="option" value="multiva">Multiva</option>
+            <option class="option" value="allianz">Allianz</option>
+            <option class="option" value="aig">AIG</option>
+          </select>
+          <textarea class="input-class textarea" name="coment" id="coment" placeholder="Comentario"></textarea>
+          <div class="condiction-container">
+            <input type="radio" id="condiction" name="condiction" value="yes">
+            <label class="radio-label " for="condiction"> He leído y acepto <a class="read-condiction" href="#">las condiciones</a></label>
+          </div>
+
+          <input class="submit" type="button" onclick="sent()" value="SOLICITAR INFORMACIÓN">
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #CDCDCD;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.title-container {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.green-letter{
+  color: #619625;
+  font-size: 35px;
+}
+
+.logo-container {
+  margin: 10px;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  height: 100px;
+}
+
+.logo-container img {
+  height: 100%;
+  display: inline-block;
+  padding: 5px; 
+}
+
+
+
+.card{
+  margin: 10px;
+  width: 80%;
+  border-radius: 15px;
+  border: #AFAFAF 4px solid; 
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.subtitle{
+  margin-top: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.letter{
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-size: 15px;
+  
+}
+
+.input-class{
+  margin: 10px;
+  width: 80%;
+  display: inline-block;
+  border: 0px;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  font-size: 25px;
+  padding:10px 20px;
+}
+.option{
+  color: #ccc;
+
+}
+.textarea{
+  
+  height: 100px;
+  resize: none;
+}
+.condiction-container{
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  margin:  20px;
+  
+}
+
+.submit{
+  width: 50%;
+  height: 40px;
+  margin:  20px;
+  background-color: #ECA110;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 50px;
+}
+.submit:hover{
+  background-color: #007095;
+}
+.read-condiction{
+  color: red;
+  font-weight: bold;
+  
+}
