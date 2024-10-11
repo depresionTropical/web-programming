@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="basic">
+    <div class="form-container">
+      <form method="post" name="formulario">
+
+        <div class="form-group">
+          <p>DATOS ALUMNO</p>
+          <input type="text" name="name" id="name" placeholder="NOMBRE">
+          <input type="text" name="email" id="email" placeholder="CORREO">
+        </div>
+        <div class="form-group ">
+          <p>ACTIVIDADES EXTRAESCOLARES</p>
+          <div class="box">
+            <input type="checkbox" name="deporte" id="deporte" class="actividad" value="deporte">
+            <label for="deporte"> deporte</label>
+            <input type="checkbox" name="club" id="club" class="actividad" value="club">
+            <label for="club">club</label>
+            <input type="checkbox" name="capitulo" id="capitulo" class="actividad" value="capitulo">
+            <label for="capitulo">capítulo</label>
+          </div>
+
+        </div>
+        <div class="form-group">
+          <p>DOMINIO DEL IDIOMA INGLÉS</p>
+          <div class="box">
+            <input type="radio" id="basic" name="english" class="english" value="basico">
+            <label for="basic">Básico</label><br>
+            <input type="radio" id="intern" name="english" class="english" value="intermedio">
+            <label for="intern">Intermedio</label><br>
+            <input type="radio" id="avan" name="english" class="english" value="avanzado">
+            <label for="avan">Avanzado</label><br><br>
+          </div>
+
+        </div>
+        <div class="form-group">
+          <p>UNIDADES</p>
+          <div class="box">
+            <select name="unidad" id="unidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <!-- input button sumit -->
+          <button class="button" type="button" id="btn_valid">Enviar</button>
+        </div>
+      </form>
+
+      <!-- funcion jquery -->
+      <script>
+          $("#btn_valid").click(function() {
+            if($("#name").val().trim() == ""){
+              alert("No escribiste tu nombre");
+              $("#name").focus();
+              return false;
+            }
+            if($("#email").val().trim() == ""){
+              alert("No escribiste tu correo");
+              $("#email").focus();
+              return false;
+            }
+            if($(".actividad").is(":checked") == false){
+              alert("No seleccionaste ninguna actividad");
+              return false;
+            }
+            if($(".english:checked").length == 0){
+              alert("No seleccionaste tu nivel de inglés");
+              return false;
+            }
+
+            document.formulario.submit();
+          });
+    
+      </script>
+
+    </div>
+  </div>
+</body>
+
+</html>
