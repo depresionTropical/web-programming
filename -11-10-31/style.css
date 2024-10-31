@@ -1,0 +1,285 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.basic {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.pink-line {
+  height: 20px;
+  background-color: #ff3281;
+  border: none;
+}
+
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.img-logo {
+  width: 200px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid black;
+  margin: 10px 0 40px 0;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.menu-container a:hover {
+  background-color: #ff3281;
+  color: white;
+  font-weight: bold;
+
+}
+
+.banner-container {
+  height: 500px;
+  background-image: url('img/fondopiedras.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+
+}
+
+.title-banner {
+
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.title-banner * {
+  margin: 20px;
+}
+
+.title-banner h1 {
+  font-size: 50px;
+}
+
+.title-banner p {
+  font-size: 20px;
+}
+
+.btn-banner {
+  margin: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-fill-pink {
+  background-color: #ff3281;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.btn-fill-pink:hover {
+  font-weight: bold;
+}
+
+.btn-border-pink {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #ff3281;
+  font-size: 20px;
+}
+
+.btn-border-pink:hover {
+  font-weight: bold;
+}
+
+/* product */
+
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  margin: 30px;
+}
+
+.title-product {
+  font-size: 30px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.subtitle-product {
+  font-size: 20px;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.img-velas {
+  width: 100%;
+  height: 100%;
+}
+
+.job-container {
+  background-color: #FFF9F1;
+
+  margin: 30px;
+}
+
+.jobs-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.title-job {
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.img-product {
+  height: 450px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.jobs-card {
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.jobs-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.jobs-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.news {
+  text-align: left;
+  width: 50%;
+
+}
+
+.news h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.news p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.letter-pink {
+  color: #ff3281;
+  font-weight: bold;
+}
+
+.form-email {
+  border: #ff3281 5px solid;
+  padding: 20px;
+}
+
+.text-input {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  border: #FFF9F1;
+}
+
+.btn-black{
+  width: 40%;
+  padding: 10px 30px;
+  margin: 20px 0; 
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.title-form {
+  font-weight: bold;
+}
+
+.video {
+  padding: 20px;
+}
+
+.video h3{
+  text-align: left;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  margin: 20px 0;
+}
+.video iframe{
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.footer{
+  background-color: #FFF9F1;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  margin: 20px 0;
+}
+
+.info p{
+  color: #ff3281;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>validacion</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function sent(){
+      var email = document.getElementById('email').value.trim()
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) {
+        alert("El correo electrónico ingresado no es válido.");
+        return false;
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+
+  <hr class="pink-line">
+  <div class="basic">
+    <div class="header-container">
+      <img class="img-logo" src="img/logocabecera.jpg" alt="logo spa">
+      <div class="social-container">
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="img/icono_facebook.jpg"
+            alt="facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="img/icono_instagram.jpg"
+            alt="instagram"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img class="social" src="img/icono_twitter.jpg"
+            alt="twitter"></a>
+
+      </div>
+    </div>
+    <div class="menu-container">
+      <a href="#">GALERIA</a>
+      <a href="#">PRECIOS</a>
+      <a href="#">CONTACTOS</a>
+      <a href="#">EQUIPO</a>
+    </div>
+  </div>
+  <div class="banner-container">
+    <div class="basic">
+      <div class="title-banner">
+        <h1>PROMOCIONES DE MARZO</h1>
+        <p>Se acerca la epoca de playa y por eso preparamos estas promociones estas dos promociones ideales para ti</p>
+      </div>
+      <div class="btn-banner">
+        <a class="btn-fill-pink" href="#">Solicitar Promoción</a>
+        <a class="btn-border-pink" href="https://www.youtube.com/watch?v=w4qaODLR_Xg" target="_blank"
+          rel="noopener noreferrer">Ver Video</a>
+      </div>
+    </div>
+  </div>
+  <div class="basic">
+    <div class="product-container">
+      <div class="details">
+        <p class="title-product">Los Productos Science of Beauty</p>
+        <p class="subtitle-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia architecto pariatur
+          similique, animi consectetur voluptatibus quidem voluptate. Earum nesciunt possimus omnis, expedita magni
+          pariatur perferendis eaque explicabo debitis quaerat sunt?</p>
+      </div>
+      <img class="img-velas" src="img/fotovelas.jpg" alt="velas">
+    </div>
+  </div>
+  <div class="job-container">
+    <div class="basic">
+      <p class="title-job">Buscamos talento para integrarlos a nuestro equipo</p>
+      <div class="jobs-container">
+        <img class="img-product" src="img/fotoaromatizante.jpg" alt="Productos">
+        <div class="jobs">
+
+          <div class="jobs-card">
+            <h3>Puesto de trabajo para Recepcionista</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates a maxime ad commodi dicta totam
+              atque id sit quia vitae, debitis odit sunt magni architecto possimus excepturi repellat perspiciatis
+              rerum.</p>
+          </div>
+          <div class="jobs-card">
+            <h3>Puesto de trabajo para Recepcionista</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates a maxime ad commodi dicta totam
+              atque id sit quia vitae, debitis odit sunt magni architecto possimus excepturi repellat perspiciatis
+              rerum.</p>
+          </div>
+          <div class="jobs-card">
+            <h3>Puesto de trabajo para Recepcionista</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates a maxime ad commodi dicta totam
+              atque id sit quia vitae, debitis odit sunt magni architecto possimus excepturi repellat perspiciatis
+              rerum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="basic">
+    <div class="contact">
+      <div class="news">
+        <h4>Recibe noticias y promociones de SPA SALON</h4>
+        <p>Un lugar para consentirte de pies a cabeza</p>
+        <p>Servicio de salón estética y Spa personalizado</p>
+        <p><span class="letter-pink">TELEFONO: </span>999 420 8871</p>
+        <p><span class="letter-pink">CORREO: </span>info@spasalon.com</p>
+
+        <div class="form-email">
+          <form action="" method="post">
+            <p class="title-form">Tu dirección de correo electrónico</p>
+            <input class="text-input" type="text" placeholder="tunombre@example.com" name="email" id="email">
+            <input  class="btn-black" class="submit" type="button" onclick="sent()" value="Enviar">
+
+          </form>
+        </div>
+
+      </div>
+      <div class="video">
+        <h3>Nuestras instalaciones</h3>
+        <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/w4qaODLR_Xg?si=0ZfHL1cVbD0ZNWrr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="basic">
+      <div class="footer-container">
+
+    <img class="img-logo" src="img/logo_spa.png" alt="logo espa">
+    <div class="info">
+      <p>Victor Hugo Martínez González</p>
+      <p>Programación Web</p>
+      <p>7SB</p>
+    </div>
+      </div>
+    </div>
+  </div>
+  <hr class="pink-line">
+</body>
+
+</html>
