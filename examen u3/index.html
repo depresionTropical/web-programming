@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen</title>
+  <link rel="stylesheet" href="style.css">  
+
+  <script>
+    function sent(){
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var service = document.getElementById("service").value;
+
+      if(name == "" || phone == "" || service == "Service Name"){
+        alert("Por favor llene todos los campos");
+      }else{
+        alert("Gracias por reservar con nosotros");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="basic">
+    <hr class="hr-orange">
+    <div class="header-container">
+      <img src="img/logo_arriba.png" alt="logo WAHHAB">
+      <div class="menu-container">
+        <a class="menu-btn" href="#">Online Booking</a>
+        <a class="menu-btn"href="#">Service</a>
+        <a class="menu-btn"href="#">About</a>
+        <a class="menu-btn"href="#">Price</a>
+        <a class="menu-btn" href="#">Get A Quote</a>
+
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-cont">
+        <h1>Heating <span class="blue-letter">Air</span> Condition Residential Serevice</h1>
+        <p>A theme for AC, Repair & Plumbing etc.</p>
+
+        <div class="btn-banner">
+          <a class="btn-orange" href="#">Read More</a>
+          <a class="btn-orange" href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    
+      <form action="" method="post">
+        <div class="booking-container">
+          <h3>Online Boking</h3>
+          <input class="input" type="text" name="name" id="name" placeholder="Your name">
+          <input class="input" type="tel" name="phone" id="phone" placeholder="Your phone">
+          
+          <select class="input" name="service" id="service">
+            <option >Service Name</option>
+            <option value="Basic">Basic</option>
+            <option value="Middle">Middle</option>
+            <option value="Full">Full</option>
+          </select>
+
+          <input  class="btn-orange input" class="submit" type="button" onclick="sent()" value="Book NOW">
+
+        </div>
+      </form>
+
+      <div class="service">
+        <div class="title-service">
+          <p class="orange letter-service">Our Service</p>
+          <p class="blue-leter subletter-service">
+            We are Interested for Your <span class="blue-letter">AIR</span> Conditional Service
+          </p>
+          <div class="cards-service">
+            <div class="card"> 
+              <img class="img-card" src="img/fotoservicio1.jpg" alt="service 1">
+              <img class="icon-card" src="img/iconoservicios1.jpg" alt="icono servicio 1">
+              <p class="title-card">Heating Service</p>
+              <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque?</p>
+
+              <p class="more-p">READ MORE</p>
+              <hr class="more-hr">
+            </div>
+            <div class="card"> 
+              <img class="img-card" src="img/fotoservicio2.jpg" alt="service 2">
+              <img class="icon-card" src="img/iconoservicios2.jpg" alt="icono servicio 2">
+              <p class="title-card">Warehouse Service</p>
+              <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque?</p>
+              <p class="more-p">READ MORE</p>
+              <hr class="more-hr">
+            </div>
+            <div class="card"> 
+              <img class="img-card" src="img/fotoservicio3.jpg" alt="service 3">
+              <img class="icon-card" src="img/iconoservicios3.jpg" alt="icono servicio 3">
+              <p class="title-card">Cooling Service</p>
+              <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque?</p>
+              <p class="more-p">READ MORE</p>
+              <hr class="more-hr">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- merqueee -->
+
+
+      <div class="marquee">
+        <marquee behavior="scroll" direction="left">
+          <img src="img/icono1.jpeg" alt="icono1  " class="img-marquee">
+          <img src="img/icono2.jpeg" alt="icono1  " class="img-marquee">
+          <img src="img/icono3.jpeg" alt="icono1  " class="img-marquee">
+          <img src="img/icono4.jpeg" alt="icono1  " class="img-marquee">
+          <img src="img/icono5.jpeg" alt="icono1  " class="img-marquee">
+        </marquee>
+
+
+      </div>
+      <div class="about-us">
+        <div class="about">
+          <p class="orange letter-service">About Us</p>
+          <p class="subletter-service">How to Repair <span class="blue-letter">AIR</span> Good Solution of Most Popular Company</p>
+          <p >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorum, labore numquam officiis id accusantium commodi accusamus velit reiciendis adipisci possimus inventore odio! Est quaerat debitis necessitatibus, doloremque quas quos.
+          </p>
+        </div>
+        <iframe class="video-about" width="560" height="315" src="https://www.youtube.com/embed/8TotT7KyVyU?si=hmQoiA-Vl-cmfbc2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="price">
+        .<p class="orange letter-service price-letter">Prices</p>
+        <p class="subletter-service price-letter">Why you should Choose our service <span class="blue-letter">Repair</span> of AC</p>
+
+        <table class="table-price">
+          <tr>
+            <th>Servicio</th>
+            <th>Tiempo</th>
+            <th>Precio</th>
+            <th>Iva</th>
+          </tr>
+          <tr>
+            <td>Meantenimiento Básico</td>
+            <td class="cell-grey">1 día</td>
+            <td class="cell-grey"> $2,000.00</td>
+            <!-- hace un cols plan -->
+            <td rowspan="3">Todos Nuestros Precios Son Más Iva (16%)</td>
+          </tr>
+          <tr>
+            <td>Mantenimiento Intermedio</td>
+            <td class="cell-grey">2 días</td>
+            <td class="cell-grey">$3,500.00</td>
+            
+          </tr>
+          <tr>
+            <td>Mantenimiento Completo</td>
+            <td class="cell-grey">3 días</td>
+            <td class="cell-grey">$1,000.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer">
+        <div class="left-footer">
+          <p class="foo-letter">
+            Wahab Comapany
+          </p>
+          <hr class="more-hr">
+          <p class="foo-sub">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias deleniti ea aut blanditiis, doloremque nesciunt eius dignissimos reiciendis dolore consectetur enim ab, ex, consequatur laudantium adipisci. Omnis dolore corporis nisi!
+          </p>
+        </div>
+        <div class="right-footer">
+          <p class="foo-letter">Follow Us</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="img/icono_facebook.jpg" alt="facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="img/icono_linkeding.jpg" alt="linkedin"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="img/icono_twitter.jpg" alt="twitter"></a>
+
+
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
