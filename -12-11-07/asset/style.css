@@ -16,3 +16,53 @@ body {
   margin: auto;
   text-align: center;
 }
+
+.basic div{
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.img-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  background-color: burlywood;
+  width: 100%;
+  gap: 5px; /* Adjust the gap value to create space between the elements */
+}
+
+.btn{
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px; /* Add this line to create space between the elements */
+}
