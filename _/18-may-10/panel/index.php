@@ -21,7 +21,7 @@
     <div class="content">
       <h3>Página de inicio del panel</h3>
       <div class="image-div">
-        <img src="../asset/img/panel.png" alt="Panel">
+        <img src="../asset/img/foto_admin.jpg" alt="Panel">
       </div>
     </div>
   </div>
