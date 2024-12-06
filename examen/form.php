@@ -15,7 +15,7 @@
       <div class="form-title">
         <p>REGISTRO MATERIA DE CURSO DE VERANO</p>
       </div>
-      <form action="./save.php" method="get">
+      <form action="./save.php" method="get" onsubmit="return validateForm()">
         <div class="style-form">
           <div class="form-group">
             <div class="group">
@@ -33,8 +33,8 @@
 
             <div class="group">
               <label for="semestre">Semestre:</label>
-              <select name="semestre" id="semestre" required>
-                <option value="" disabled>Seleccione un semestre</option>
+              <select name="semestre" id="semestre" >
+                <option value="" disabled selected>Seleccione un semestre</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -49,10 +49,8 @@
             </div>
             <div class="group">
               <label for="materia">Materia que deseas inscribir:</label>
-              <input type="text" name="materia">
+              <input type="text" name="materia" id="materia">
             </div>
-
-
           </div>
           <div class="form-group">
             <div class="group">
@@ -70,8 +68,8 @@
 
             <div class="group">
               <label for="carrera">CARRERA:</label>
-              <select name="carrera" id="carrera" required>
-                <option value="" disabled>Seleccione una carrera</option>
+              <select name="carrera" id="carrera" >
+                <option value="" disabled selected>Seleccione una carrera</option>
                 <option value="INGENIERIA EN SISTEMAS">INGENIERIA EN SISTEMAS</option>
                 <option value="INGENIERIA CIVIL">INGENIERIA CIVIL</option>
                 <option value="INGENIERIA INDUSTRIAL">INGENIERIA INDUSTRIAL</option>
@@ -79,18 +77,13 @@
                 <option value="INGENIERIA ELECTRICA">INGENIERIA ELECTRICA</option>
                 <option value="INGENIERIA ELECTRONICA">INGENIERIA ELECTRONICA</option>
                 <option value="INGENIERIA QUIMICA">INGENIERIA QUIMICA</option>
-                
               </select>
             </div>
-
-
           </div>
         </div>
 
         <input class="btn-regis" type="submit" value="REGISTRATE">
-
       </form>
-
     </div>
 
     <?php include "./componet/footer.php"; ?>
@@ -100,18 +93,21 @@
 
 </html>
 <script>
-  document.querySelector('form').addEventListener('submit', function(event) {
+  function validateForm() {
     var nombre = document.getElementById('nombre').value;
-    var repetidor = document.querySelector('input[name="repetidor"]:checked');
+    var repetidor_si = document.getElementById('repetidor_si').checked;
+    var repetidor_no = document.getElementById('repetidor_no').checked;
     var semestre = document.getElementById('semestre').value;
-    var materia = document.querySelector('input[name="materia"]').value;
+    var materia = document.getElementById('materia').value;
     var matricula = document.getElementById('matricula').value;
-    var horario = document.querySelector('input[name="horario"]:checked');
+    var maturino = document.getElementById('maturino').checked;
+    var vespertino = document.getElementById('vespertino').checked;
     var carrera = document.getElementById('carrera').value;
 
-    if (!nombre || !repetidor || !semestre || !materia || !matricula || !horario || !carrera) {
+    if (nombre === '' || (!repetidor_si && !repetidor_no) || semestre === '' || materia === '' || matricula === '' || (!maturino && !vespertino) || carrera === '') {
       alert('Por favor, complete todos los campos.');
-      event.preventDefault();
+      return false;
     }
-  });
+    return true;
+  }
 </script>

@@ -39,7 +39,7 @@
         echo "<p>Materia: <span class='red-letter'> " . $row["materia"] . "</span></p>";
         echo "</div>";
         echo "<a href='./delete.php?id=" . $row["id"] . "' class='btn-delete'>";
-        echo "<img src='./img/icono_cerrar.jpg' alt='Eliminar' class='delete-icon'> Eliminar";
+        echo "Eliminar<img src='./img/icono_cerrar.jpg' alt='Eliminar' class='delete-icon'> ";
         echo "</a>";
         echo "<hr>";
         echo "</div>";

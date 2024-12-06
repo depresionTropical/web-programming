@@ -4,8 +4,8 @@
       INSTITUTO TECNOLÓGICO DE MÉRIDA
     </span></p>
     
-    <p>Av. </p>
-    <p>Tel: 999999</p>
+    <p>Av. Tecnológico km 45 S/N C.P 97118</p>
+    <p>Tel:(999) 964-5000, 964-5001</p>
   </div>
   <div class="img-header">
     <img class="" src="./img/logo_tec.png" alt="logo tec">
