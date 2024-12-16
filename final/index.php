@@ -20,7 +20,7 @@
           <a target="_blank" href="https://www.pinterest.com/"><img class="social" src="./img/social/PINTEREST.webp" alt="pinterest"></a>
           <a target="_blank" href="https://www.youtube.com/"><img class="social" src="./img/social/YOUTUBE.webp" alt="youtube"></a>
           <a target="_blank" href="https://www.tiktok.com/"><img class="social" src="./img/social/TIKTOK.webp" alt="tiktok"></a>
-          <a class="btn-menu" href="#us">admin</a>
+          <a class="btn-menu" href="./dashboard/">admin</a>
         </div>
         <div class="menu">
           <a class="btn-menu" href="#us">Nosotros</a>
@@ -100,7 +100,7 @@
   .<div class="book" id="book">
     <div class="basic">
       <h2>Reserva tu lugar</h2>
-      <form class="form-container" action="book.php" method="POST">
+      <form class="form-container" action="./dashboard/server/book.php" method="POST">
         <div class="form-group">
           <label class="label-form" for="name">Nombre</label>
           <input class="input-form" type="text" id="name" name="name">
@@ -112,8 +112,15 @@
 
         </div>
         <div class="form-group">
-          <label class="label-form" for="phone">Teléfono</label>
-          <input class="input-form" type="tel" id="phone" name="phone">
+            <label class="label-form">Ubicación</label>
+            <div>
+            <input type="radio" id="terraza" name="ubicacion" value="terraza">
+            <label for="terraza">Terraza</label>
+            </div>
+            <div>
+            <input type="radio" id="dentro" name="ubicacion" value="dentro">
+            <label for="dentro">Dentro del restaurante</label>
+            </div>
           <label class="label-form" for="date">Fecha</label>
           <input class="input-form" type="date" id="date" name="date" min="2024-12-16">
         </div>
@@ -123,7 +130,12 @@
           <label class="label-form" for="people">Número de personas</label>
           <input class="input-form" type="number" id="people" name="people">
         </div>
+        
+      <div class="form-group">
+        <label class="label-form" for="comments">Comentarios o requerimientos adicionales</label>
+        <textarea class="input-form" id="comments" name="comments" rows="4" cols="50"></textarea>
         <button class="btn-form" type="submit">Reservar</button>
+      </div>
       </form>
     </div>
   </div>
