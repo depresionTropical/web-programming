@@ -182,3 +182,33 @@ body {
   margin-top: 20px;
   width: 100%;
 }
+
+
+.form-new-add{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px; 
+}
+
+.form-new-add-input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  
+}
+.form-new-add-label{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-new-add-submit{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FF0303;
+  color: #fff;
+}

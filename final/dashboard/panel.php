@@ -1,3 +1,5 @@
+<?php require './server/secure.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
     <div class="content">
       <h3>Página de inicio del panel</h3>
       <div class="image-div">
-        <img src="../asset/img/foto_admin.jpg" alt="Panel">
+        <img src="../img/food.jpg" alt="Panel">
       </div>
     </div>
   </div>

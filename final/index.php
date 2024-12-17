@@ -57,21 +57,28 @@
       <div class="new-letter">
         <h2>Descrubre nuevas experiencias</h2>
         <div class="new-contrainer-card">
-          <div class="new-card">
-            <img class="new-img" src="./img/sushi1.jpg" alt="sushi1">
-            <h3>Rolls de temporada</h3>
-            <p>Descubre los sabores de la temporada con nuestros rolls especiales. Ingredientes frescos y sabores únicos que te sorprenderán.</p>
-          </div>
-          <div class="new-card">
-            <img class="new-img" src="./img/sushi2.jpg" alt="sushi2">
-            <h3>Menú de degustación</h3>
-            <p>Prueba un poco de todo con nuestro menú de degustación. Una selección de los mejores plrwerewatillos para que disfrutes de una experiencia completa.</p>
-          </div>
-          <div class="new-card">
-            <img class="new-img" src="./img/sushi2.jpg" alt="sushi2">
-            <h3>Menú de degustación</h3>
-            <p>Prueba un poco de todo con nuestro menú de degustación. Una selección de los mejores plrwerewatillos para que disfrutes de una experiencia completa.</p>
-          </div>
+          
+        <?php
+        require "./dashboard/server/auth.php";
+
+        $sql = "SELECT * FROM `new`";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) {
+            echo '<div class="new-card">';
+            // echo '<img class="new-card-img" '; echo' src="./dashboard/server/' . $row["img"] . '" alt="' . $row["title"] . '">';
+            // echo '<img class="new-card-img"  echo src="./dashboard/server/' . $row["img"] . '" alt="' . $row["title"] . '">';
+            echo '<h3>' . $row["title"] . '</h3>';
+            echo '<p>$' . $row["price"] . '</p>';
+            echo '<p>' . $row["description"] . '</p>';
+            echo '</div>';
+          }
+        } else {
+            echo "<p>Por el momento no hay novedades.</p>";
+        }
+        $conn->close();
+        ?>
         </div>
 
       </div>

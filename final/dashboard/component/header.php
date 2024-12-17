@@ -2,7 +2,8 @@
   <div class="basic">
     <div class="head__container">
       <div class="head__card">
-        <img  class="logo__head" src="../img/logo_blanco.png" alt="Logo">
+        <a href="../"><img  class="logo__head" src="../img/logo_blanco.png" alt="Logo"></a>
+        
       </div>
       <div class="head__card">
         <h1>Panel administrativo</h1>

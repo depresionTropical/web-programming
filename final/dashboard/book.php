@@ -1,3 +1,5 @@
+<?php require './server/secure.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
